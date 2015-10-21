@@ -3,6 +3,7 @@ import java.util.Arrays;
 //Question 3.5
 
 public class Dichotomie {
+<<<<<<< HEAD
 
 	public static int[] tri(int tab[]) {
 		int b=tab.length,temps=0, c=0, k=0;
@@ -48,4 +49,7 @@ public class Dichotomie {
 		int [] tableau={2,5,3,3,6,5,5,0,5,9,7,1,2};
 		dichotomie(4,tri(tableau));
 	}
+=======
+// en cours.
+>>>>>>> origin/master
 }
