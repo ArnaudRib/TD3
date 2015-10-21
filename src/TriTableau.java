@@ -5,19 +5,19 @@ public class TriTableau {
 
 	public static int[] tri(int tab[]) {
 		int b=tab.length,temps=0, c=0, k=0;
-		for (k=0;k<b;k++){ //recommence le tri à partir du début à chaque fin de cycle de tri.
-			while (c<b-1){ //compare chaque voisin et les inverse si nécessaire.
+		for (k=0;k<b;k++){ //recommence le tri √† partir du d√©but √† chaque fin de cycle de tri.
+			while (c<b-1){ //compare chaque voisin et les inverses si n√©cessaire.
 				if (tab[c]>tab[c+1]){
 					temps=tab[c+1];
 					tab[c+1]=tab[c];
 					tab[c]=temps;
 					c++;
-					System.out.println(Arrays.toString(tab));//affiche le tableau souhaité.
+					System.out.println(Arrays.toString(tab));//affiche le tableau souhait√©.
 				}else{
 					c++;
 				}
 			}
-			c=0; //remet à zéro l'indice du tableau pour recommencer à analyser les valeurs.
+			c=0; //remet √† z√©ro l'indice du tableau pour recommencer √† analyser les valeurs.
 		}
 		return tab;
 	}
