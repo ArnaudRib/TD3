@@ -3,23 +3,22 @@ import java.util.Arrays;
 //Question 3.5
 
 public class Dichotomie {
-<<<<<<< HEAD
 
 	public static int[] tri(int tab[]) {
 		int b=tab.length,temps=0, c=0, k=0;
-		for (k=0;k<b;k++){ //recommence le tri à partir du début à chaque fin de cycle de tri.
-			while (c<b-1){ //compare chaque voisin et les inverses si nécessaire.
+		for (k=0;k<b;k++){ //recommence le tri √† partir du d√©but √† chaque fin de cycle de tri.
+			while (c<b-1){ //compare chaque voisin et les inverses si n√©cessaire.
 				if (tab[c]>tab[c+1]){
 					temps=tab[c+1];
 					tab[c+1]=tab[c];
 					tab[c]=temps;
 					c++;
-					System.out.println(Arrays.toString(tab));//affiche le tableau souhaité.
+					System.out.println(Arrays.toString(tab));//affiche le tableau souhait√©.
 				}else{
 					c++;
 				}
 			}
-			c=0; //remet à zéro l'indice du tableau pour recommencer à analyser les valeurs.
+			c=0; //remet √† z√©ro l'indice du tableau pour recommencer √† analyser les valeurs.
 		}
 		return tab;
 	} 
@@ -30,18 +29,18 @@ public class Dichotomie {
 		 while (i < tab.length) {
 			 int milieu = (a + b)/2;
 			 if (tab[milieu] == val) {
-				 System.out.print("Le nombre à l'indice "+milieu+" est la valeur demandée, à savoir " + tab[milieu]+".");
+				 System.out.print("Le nombre √† l'indice "+milieu+" est la valeur demand√©e, √† savoir " + tab[milieu]+".");
 				 return milieu;
 			 } else {
 				 if (tab[milieu] > val) {
-					 b--;
+					 b--;//on d√©cr√©mente l'indice √©gal √† la taille du tableau.
 				 } else {
-					 a++;
+					 a++;//on incr√©mente l'indice nul au premier tour.
 				 }
 			 }
 			 i++;
 		 }
-		 System.out.println("La valeur demandée, c'est à dire "+val+", ne se trouve pas dans le tableau.");
+		 System.out.println("La valeur demand√©e, c'est ÀÜ dire "+val+", ne se trouve pas dans le tableau.");
 		 return 1;
 	}
 
@@ -49,7 +48,5 @@ public class Dichotomie {
 		int [] tableau={2,5,3,3,6,5,5,0,5,9,7,1,2};
 		dichotomie(4,tri(tableau));
 	}
-=======
-// en cours.
->>>>>>> origin/master
+
 }
