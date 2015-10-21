@@ -13,13 +13,13 @@ public class Dichotomie {
 					tab[c+1]=tab[c];
 					tab[c]=temps;
 					c++;
-					System.out.println(Arrays.toString(tab));//affiche le tableau souhaité.
 				}else{
 					c++;
 				}
 			}
 			c=0; //remet à zéro l'indice du tableau pour recommencer à analyser les valeurs.
 		}
+		System.out.println(Arrays.toString(tab));//affiche le tableau trié.
 		return tab;
 	} 
 	
